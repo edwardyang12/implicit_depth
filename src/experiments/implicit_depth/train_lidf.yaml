@@ -15,8 +15,8 @@ mask_type: all
 # data setting
 dataset:
   type: cleargrasp
-  cleargrasp_root_dir: ../datasets/cleargrasp
-  omniverse_root_dir: ../datasets/omniverse
+  cleargrasp_root_dir: ./datasets/cleargrasp
+  omniverse_root_dir: ./datasets/omniverse
   use_data_augmentation: True
   img_width: 320
   img_height: 240
