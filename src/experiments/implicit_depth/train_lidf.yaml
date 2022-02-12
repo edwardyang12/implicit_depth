@@ -1,7 +1,7 @@
 # general options
 trainer_name: lidf
 exp_type: train
-base_log_dir: ../logs/lidf
+base_log_dir: /edward-slow-vol/checkpoints/lidf
 log_name: 
 custom_postfix: ''
 resume: latest_network.pth
