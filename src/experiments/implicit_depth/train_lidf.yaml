@@ -67,7 +67,7 @@ grid:
 
 # training setting
 training:
-  batch_size: 32
+  batch_size: 8
   valid_batch_size: 1
   nepochs: 60
   nepoch_decay: 60
