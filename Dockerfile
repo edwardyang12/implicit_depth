@@ -32,7 +32,7 @@ RUN curl -o ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest
 RUN  pip install --upgrade pip && \
      pip install opencv-python matplotlib tqdm imgaug PyYAML scikit-learn easydict && \
      pip install open3d OpenEXR plyfile h5py && \
-     pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-1.6.0+cu102.html
+     pip install torch-scatter==2.0.5 -f https://pytorch-geometric.com/whl/torch-1.6.0+cu102.html
 
 WORKDIR /workspace
 RUN chmod -R a+w .
