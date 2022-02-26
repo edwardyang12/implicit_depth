@@ -1,8 +1,8 @@
 # general options
 trainer_name: refine
 exp_type: train
-base_log_dir: ../logs/refine
-lidf_ckpt_path: 
+base_log_dir: /edward-slow-vol/checkpoints/lidf/omniverse_refine
+lidf_ckpt_path: /edward-slow-vol/checkpoints/lidf/omniverse/ckpt/bn12_lr0.001_nepo60_Adam_gres8_msn20000_vsn10000_rgb_resnet_embed_ROIAlign_pnet_twostage_offdec_IEF_niter2_probdec_IMNET_scatter_Maxpool_epo6_prob_ray_sn10.0_epo0_omniverse/epoch016_network.pth
 log_name: 
 custom_postfix: ''
 resume: latest_network.pth
@@ -16,9 +16,9 @@ mask_type: all
 
 # data setting
 dataset:
-  type: mixed
-  cleargrasp_root_dir: ../datasets/cleargrasp
-  omniverse_root_dir: ../datasets/omniverse
+  type: omniverse
+  cleargrasp_root_dir: ./datasets/cleargrasp
+  omniverse_root_dir: ./datasets/omniverse
   use_data_augmentation: True
   img_width: 320
   img_height: 240
